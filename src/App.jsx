@@ -14,7 +14,10 @@ const App = () => {
           <Banner></Banner>
         </section>
 
-        
+        {/* Count section  */}
+        <section>
+          <Count></Count>
+        </section>
       </main>
     </div>
   );
