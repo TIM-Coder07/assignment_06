@@ -3,7 +3,7 @@ import Products from "./Products";
 import Cart from "./Cart";
 
 const MainSection = () => {
-  const [activeTab, setActiveTab] = useState("products"); // default
+  const [activeTab, setActiveTab] = useState("products");
 
   return (
     <div className="p-6">

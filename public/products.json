@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "DesignMaster",
+    "description": "Design stunning graphics and social media posts effortlessly.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "New",
+    "features": [
+      "500+ templates",
+      "Drag & Drop editor",
+      "HD export"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Task Tracker",
+    "description": "Organize your tasks and boost productivity.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "trending",
+    "tagType": "Trending",
+    "features": [
+      "Task reminders",
+      "Calendar integration",
+      "Progress reports"
+    ],
+    "icon": "✅"
+  },
+  {
+    "id": 4,
+    "name": "Invoice Genie",
+    "description": "Generate and manage invoices easily for your business.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": [
+      "Custom invoice templates",
+      "Automatic tax calculation",
+      "PDF export"
+    ],
+    "icon": "💰"
+  },
+  {
+    "id": 5,
+    "name": "Email Campaigner",
+    "description": "Send professional email campaigns and track results.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "New",
+    "features": [
+      "Pre-designed templates",
+      "Automated campaigns",
+      "Analytics dashboard"
+    ],
+    "icon": "✉️"
+  },
+  {
+    "id": 6,
+    "name": "Code Snippet Hub",
+    "description": "Store and organize your code snippets securely.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "trending",
+    "tagType": "Trending",
+    "features": [
+      "Syntax highlighting",
+      "Cloud backup",
+      "Searchable library"
+    ],
+    "icon": "💻"
+  },
+  {
+    "id": 7,
+    "name": "Budget Buddy",
+    "description": "Track your expenses and manage your budget effectively.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": [
+      "Expense tracking",
+      "Budget reports",
+      "Goal setting"
+    ],
+    "icon": "📊"
+  }
+]
