@@ -29,7 +29,7 @@ const App = () => {
             cartItems={cartItems}
             setCartItems={setCartItems}
           ></MainSection>
-          <ToastContainer />
+          
         </section>
       </main>
     </div>
