@@ -1,22 +1,33 @@
 import { ShoppingCart } from "lucide-react";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ cartItems }) => {
   const links = (
     <>
-      <li><a>Products</a></li>
-      <li><a>Features</a></li>
-      <li><a>Resources</a></li>
-      <li><a>Pricing</a></li>
-      <li><a>Testimonials</a></li>
-      <li><a>FAQ</a></li>
+      <li>
+        <a>Products</a>
+      </li>
+      <li>
+        <a>Features</a>
+      </li>
+      <li>
+        <a>Resources</a>
+      </li>
+      <li>
+        <a>Pricing</a>
+      </li>
+      <li>
+        <a>Testimonials</a>
+      </li>
+      <li>
+        <a>FAQ</a>
+      </li>
     </>
   );
 
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm px-4">
-        
         {/* Navbar Start */}
         <div className="navbar-start">
           <div className="dropdown">
@@ -50,18 +61,20 @@ const Navbar = () => {
 
         {/* Navbar Center */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
 
         {/* Navbar End */}
         <div className="navbar-end flex items-center gap-4">
-          <ShoppingCart className="cursor-pointer hover:text-blue-500" />
+          <div className="relative cursor-pointer">
+            <ShoppingCart className="hover:text-blue-500" />
 
-          <button className="cursor-pointer hover:text-blue-500">
-            Log In
-          </button>
+            <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+              {cartItems.length}
+            </span>
+          </div>
+
+          <button className="cursor-pointer hover:text-blue-500">Log In</button>
 
           <a className="btn btn-primary">Get Started</a>
         </div>

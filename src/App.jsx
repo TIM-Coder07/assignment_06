@@ -1,14 +1,17 @@
-import React from 'react';
-import Navbar from './Component/Navbar';
-import Banner from './Component/Banner';
-import Count from './Component/Count';
-import MainSection from './Component/MainSection/MainSection';
+import React, { useState } from "react";
+import Navbar from "./Component/Navbar";
+import Banner from "./Component/Banner";
+import Count from "./Component/Count";
+import MainSection from "./Component/MainSection/MainSection";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+
   return (
     <div>
       <nav>
-        <Navbar></Navbar>
+        <Navbar cartItems={cartItems}></Navbar>
       </nav>
       <main>
         <section>
@@ -21,8 +24,12 @@ const App = () => {
         </section>
 
         {/* Toggling Part  */}
-        <section className='mt-10'>
-          <MainSection></MainSection>
+        <section className="mt-10">
+          <MainSection
+            cartItems={cartItems}
+            setCartItems={setCartItems}
+          ></MainSection>
+          <ToastContainer />
         </section>
       </main>
     </div>
